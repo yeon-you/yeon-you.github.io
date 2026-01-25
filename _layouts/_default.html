@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>{{ site.title }}</h1>
+      <p>{{ site.description }}</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="{{ '/' | relative_url }}">홈</a></li>
+        <li><a href="{{ '/blog/' | relative_url }}">블로그</a></li>
+        <li><a href="{{ '/about/' | relative_url }}">소개</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      {{ content }}
+    </main>
+  </div>
+</body>
+</html>
