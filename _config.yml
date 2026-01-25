@@ -1,0 +1,15 @@
+# jekyll 기본 설정
+title :  GIYEON
+description:  Jekyll로 만들었습니다.
+url:  https://youn-you.github.io
+baseurl: ""
+
+# 빌드 설정
+markdown:  kramdown
+
+# 제외할 파일
+exclude:
+- README.md
+- Gemfile
+- Gemfile.lock
+- .DS_Store
